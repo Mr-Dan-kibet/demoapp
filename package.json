@@ -1,0 +1,21 @@
+{
+  "name": "luxury-rides-backend",
+  "version": "1.0.0",
+  "description": "A JSON server backend for Luxury Rides booking system",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch db.json --port 10000"
+  },
+  "keywords": [
+    "json-server",
+    "booking",
+    "luxury",
+    "rides",
+    "backend"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "json-server": "^0.17.3"
+  }
+}
