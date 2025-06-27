@@ -15,8 +15,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   const pickupInput = document.getElementById("pickupPoint");
   const bookingHistoryList = document.getElementById("booking-history-list");
 
-  const API_URL = "http://localhost:3000/bookings";
-  const TICKET_URL = "http://localhost:3000/latestTicket";
+  const API_URL = "https://demoapp-h577.onrender.com/bookings";
+  const TICKET_URL = "https://demoapp-h577.onrender.com/latestticket";
 
   const rows = ["A", "B", "C", "D", "E"];
   const seatsPerRow = 5;
