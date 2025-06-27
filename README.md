@@ -59,8 +59,8 @@ Luxury-Rides/
 
 1. **Clone the Repository**
  ```bash
-  git clone 
-  cd 
+  git clone git@github.com:Mr-Dan-kibet/demoapp.git
+  cd demoapp
 ```
 2. Install JSON Server (if not already installed)
 ```
