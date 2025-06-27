@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luxury Rides</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <script defer src="./src/index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header>
+        <h1>Luxury Rides – Book Your Seat</h1>
+      </header>
+
+      <main class="booking">
+        <!-- Seat Selection Section -->
+        <section id="seat-selection">
+          <h2>Select Your Seat(s)</h2>
+
+          <!-- Seat Legend -->
+          <div class="legend">
+            <span class="seat available"></span> Available
+            <span class="seat selected"></span> Selected
+            <span class="seat booked"></span> Booked
+          </div>
+
+          <div
+            class="seat-grid"
+            id="seats-container"
+            aria-label="Seat Selection Grid"></div>
+        </section>
+
+        <!-- Booking Form Section -->
+        <section id="booking-form">
+          <h2>Passenger Information</h2>
+          <form id="bookingForm" novalidate>
+            <label for="name">Full Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="e.g. Jane Doe"
+              autocomplete="name" />
+
+            <label for="phone">Phone Number:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              pattern="07[0-9]{8}"
+              placeholder="07XXXXXXXX"
+              inputmode="numeric"
+              autocomplete="tel" />
+
+            <label for="travelDate">Travel Date:</label>
+            <input type="date" id="travelDate" name="travelDate" required />
+
+            <label for="travelTime">Travel Time:</label>
+            <select id="travelTime" name="travelTime" required>
+              <option value="">-- Choose Departure Time --</option>
+              <option value="6:00 AM">6:00 AM</option>
+              <option value="8:00 AM">8:00 AM</option>
+              <option value="10:00 AM">10:00 AM</option>
+              <option value="12:00 PM">12:00 PM</option>
+              <option value="2:00 PM">2:00 PM</option>
+              <option value="4:00 PM">4:00 PM</option>
+            </select>
+
+            <label for="pickupPoint">Pickup Point:</label>
+            <input
+              type="text"
+              id="pickupPoint"
+              name="pickupPoint"
+              required
+              placeholder="e.g. Nairobi CBD" />
+
+            <label for="destination">Destination:</label>
+            <input
+              type="text"
+              id="destination"
+              name="destination"
+              required
+              placeholder="e.g. Nakuru" />
+
+            <button type="submit">Book Now</button>
+          </form>
+        </section>
+
+        <!-- Ticket Display Section -->
+        <section id="ticket-display" aria-live="polite">
+          <h2>Your Ticket</h2>
+          <div class="ticket" id="ticket-info" style="display: none">
+            <h3>🎟️ Luxury Ride Ticket</h3>
+            <p><strong>Name:</strong> <span id="displayName"></span></p>
+            <p><strong>Phone:</strong> <span id="displayPhone"></span></p>
+            <p><strong>Seat(s):</strong> <span id="displaySeats"></span></p>
+            <p><strong>Date:</strong> <span id="displayDate"></span></p>
+            <p><strong>Time:</strong> <span id="displayTime"></span></p>
+            <p
+              ><strong>Destination:</strong>
+              <span id="displayDestination"></span
+            ></p>
+            <p
+              ><strong>Pickup Point:</strong> <span id="displayPickup"></span
+            ></p>
+          </div>
+          <section id="history-section">
+            <h3>Booking History</h3>
+            <ul id="booking-history-list"></ul>
+          </section>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer style="text-align: center; margin-top: 2rem">
+        <p>&copy; 2025 Luxury Rides. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>
