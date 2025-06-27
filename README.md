@@ -78,6 +78,42 @@ OR simply open index.html in your browser
 ---
 ## HOW TO USE
 
+Welcome to the Luxury Rides seat booking system! Follow these simple steps to reserve your seat:
+
+1. Select Your Seat(s)
+Scroll through the seat layout.
+
+Click on available seats to select (green).
+
+Selected seats will turn blue.
+
+Booked seats are shown in red and cannot be selected.
+
+2. Fill in Passenger Information
+Enter your Full Name.
+
+Enter a valid Phone Number (must start with 07).
+
+Choose your Travel Date.
+
+Select your Departure Time.
+
+Enter your Pickup Point and Destination.
+
+3. Book Your Ride
+Click the "Book Now" button.
+
+A digital ticket will be displayed showing your booking details.
+
+A receipt popup will confirm your booking.
+
+4. View Booking History
+Scroll down to the Booking History section to view all bookings.
+
+Admin users can delete or mark bookings as paid (if not yet completed).
+
+All data is stored in a live database hosted on Render.
+
 ## 👨🏽‍💻 Author
 Dan Rotich
 Full-Stack Developer @ Moringa School
