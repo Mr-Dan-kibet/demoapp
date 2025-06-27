@@ -4,7 +4,7 @@
   "description": "A JSON server backend for Luxury Rides booking system",
   "main": "index.js",
   "scripts": {
-    "start": "json-server --watch db.json --port 10000"
+    "start": "json-server --watch db.json --port $PORT --host 0.0.0.0"
   },
   "keywords": [
     "json-server",
